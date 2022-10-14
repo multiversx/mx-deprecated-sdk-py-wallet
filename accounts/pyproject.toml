@@ -1,0 +1,15 @@
+[project]
+name = "erdpy-accounts"
+authors = [
+  { name="Elrond Network" },
+]
+description = "erdpy/accounts"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ElrondNetwork/elrond-sdk-erdpy-eggs"

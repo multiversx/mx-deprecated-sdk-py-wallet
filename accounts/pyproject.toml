@@ -4,6 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "erdpy-accounts"
+version = "0.1.0"
 authors = [
   { name="Elrond Network" },
 ]

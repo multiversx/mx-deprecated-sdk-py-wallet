@@ -1,26 +1,12 @@
-import logging
 from typing import Any
 
 from erdpy_accounts import bech32
-
-logger = logging.getLogger("accounts")
 
 SC_HEX_PUBKEY_PREFIX = "0" * 16
 HRP = "erd"
 PUBKEY_LENGTH = 32
 PUBKEY_STRING_LENGTH = PUBKEY_LENGTH * 2  # hex-encoded
 BECH32_LENGTH = 62
-
-
-class Account():
-    def __init__(self, address: Any = None):
-        self.address = Address(address)
-        self.nonce: int = 0
-
-    def sync_nonce(self, proxy: Any):
-        logger.info("Account.sync_nonce()")
-        self.nonce = proxy.get_account_nonce(self.address)
-        logger.info(f"Account.sync_nonce() done: {self.nonce}")
 
 
 class Address():

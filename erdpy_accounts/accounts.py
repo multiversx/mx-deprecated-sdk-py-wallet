@@ -1,7 +1,7 @@
 import logging
 from typing import Any
 
-from accounts import bech32
+from erdpy_accounts import bech32
 
 logger = logging.getLogger("accounts")
 

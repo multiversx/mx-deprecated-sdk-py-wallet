@@ -8,6 +8,8 @@ class ProxyNetworkProvider():
         self.url = url
 
     def do_get(self, url: str) -> 'GenericResponse':
+        url = f"{self.url}/{url}"
+
         try:
             response = requests.get(url)
             response.raise_for_status()
@@ -22,6 +24,8 @@ class ProxyNetworkProvider():
             raise GenericError(url, err)
 
     def do_post(self, url: str, payload: Any) -> 'GenericResponse':
+        url = f"{self.url}/{url}"
+
         try:
             response = requests.post(url, json=payload)
             response.raise_for_status()

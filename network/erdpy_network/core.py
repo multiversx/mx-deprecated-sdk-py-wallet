@@ -44,7 +44,7 @@ def _get_data(parsed: Dict[str, Any], url: str) -> 'GenericResponse':
     err = parsed.get("error")
     code = parsed.get("code")
 
-    if not err and code == "successful":
+    if not err:
         data: Dict[str, Any] = parsed.get("data", dict())
         return GenericResponse(data)
 

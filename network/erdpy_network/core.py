@@ -1,6 +1,7 @@
 from typing import Any, Dict
 
 import requests
+from erdpy_network.errors import GenericError
 
 
 class ProxyNetworkProvider():
@@ -67,8 +68,3 @@ class GenericResponse():
 
     def to_dictionary(self) -> Dict[str, Any]:
         return self.__dict__
-
-
-class GenericError(Exception):
-    def __init__(self, url: str, data: Any):
-        super().__init__(f"Url = [{url}], error = {data}")

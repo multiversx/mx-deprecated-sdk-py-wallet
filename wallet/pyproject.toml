@@ -17,7 +17,7 @@ classifiers = [
 ]
 dependencies = [
   "pynacl==1.5.0",
-  "git+https://git@github.com/ElrondNetwork/elrond-sdk-erdpy-eggs.git@init#egg=erdpy_accounts&subdirectory=accounts"
+  "erdpy_accounts @ git+https://git@github.com/ElrondNetwork/elrond-sdk-erdpy-eggs.git@init#egg=erdpy_accounts&subdirectory=accounts"
 ]
 
 [project.urls]

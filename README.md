@@ -4,7 +4,7 @@ Wallet & crypto components of **erdpy**.
 
 ## Distribution
  
- - GitHub: `git+https://git@github.com/ElrondNetwork/sdk-erdpy-wallet.git@v{Version}#egg=erdpy_wallet`
+ - GitHub: `git+https://git@github.com/ElrondNetwork/mx-sdk-erdpy-wallet.git@v{Version}#egg=erdpy_wallet`
  - [PyPi](https://pypi.org/user/elrond/)
 
 ## Documentation

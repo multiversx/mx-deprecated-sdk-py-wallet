@@ -7,7 +7,7 @@ allow-direct-references = true
 
 [project]
 name = "multiversx-sdk-wallet"
-version = "0.9.1"
+version = "0.9.2"
 authors = [
   { name="MultiversX" },
 ]
@@ -22,7 +22,7 @@ classifiers = [
 ]
 dependencies = [
   "pynacl==1.5.0",
-  "cryptography==36.0.2",
+  "cryptography==42.0.2",
   "mnemonic==0.20",
   "multiversx-sdk-core>=0.8.0,<0.9.0"
 ]

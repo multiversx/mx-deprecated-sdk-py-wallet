@@ -7,15 +7,16 @@ allow-direct-references = true
 
 [project]
 name = "multiversx-sdk-wallet"
-version = "0.9.3"
+version = "1.0.0"
 authors = [
   { name="MultiversX" },
 ]
 license = "MIT"
-description = "Wallet & crypto components of MultiversX Python SDK."
+description = "Deprecated. Instead, use multiversx-sdk."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
+    "Development Status :: 7 - Inactive",
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",

@@ -1,3 +1,5 @@
+import warnings
+
 from multiversx_sdk_wallet.mnemonic import Mnemonic
 from multiversx_sdk_wallet.user_keys import UserPublicKey, UserSecretKey
 from multiversx_sdk_wallet.user_pem import UserPEM
@@ -8,5 +10,7 @@ from multiversx_sdk_wallet.validator_keys import (ValidatorPublicKey,
                                                   ValidatorSecretKey)
 from multiversx_sdk_wallet.validator_signer import ValidatorSigner
 from multiversx_sdk_wallet.validator_verifier import ValidatorVerifier
+
+warnings.warn('This package is deprecated and will no longer be maintained. Instead, please use "multiversx-sdk".')
 
 __all__ = ["UserSigner", "Mnemonic", "UserSecretKey", "UserPublicKey", "ValidatorSecretKey", "ValidatorPublicKey", "UserVerifier", "ValidatorSigner", "ValidatorVerifier", "UserWallet", "UserPEM"]
